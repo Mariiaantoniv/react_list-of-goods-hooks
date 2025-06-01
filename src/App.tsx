@@ -95,7 +95,7 @@ export const App: React.FC = () => {
         {sortField || reversed ? (
           <button
             onClick={() => {
-              setSortField('');
+              setSortField(SortType.None);
               setReversed(false);
             }}
             type="button"
